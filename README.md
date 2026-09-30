@@ -1,0 +1,3 @@
+## Proyecto Integrador: Sistema de Gestión y Mantenimiento de Flotas (FleetManager)
+### 🎯 Objetivo del Proyecto
+Diseñar e implementar una aplicación en Java organizada por capas que gestione la flota de vehículos de una empresa. El sistema cargará datos desde un archivo CSV, aplicará reglas de negocio e inspección, parametrizará las rutas y umbrales con un archivo .properties, procesará la información mediante Java Streams/Lambdas y exportará un informe final en disco, asegurando la calidad del código mediante pruebas unitarias en JUnit 5.
