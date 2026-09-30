@@ -1,5 +1,7 @@
 package com.fleet.model;
 
+import com.fleet.utils.ConfigLoader;
+
 public class ElectricCar extends Car {
 
     private double batteryCapacity;
@@ -15,7 +17,7 @@ public class ElectricCar extends Car {
     }
 
     public boolean needsInspection() {
-        return getYear() <= 2021; //CONFIG
+        return getYear() <= ConfigLoader.getPropertyInt("electricCar",2021);
     }
 
     public double getBatteryCapacity() {

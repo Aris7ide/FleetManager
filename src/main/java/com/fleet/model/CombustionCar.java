@@ -1,5 +1,7 @@
 package com.fleet.model;
 
+import com.fleet.utils.ConfigLoader;
+
 public class CombustionCar extends Car{
 
     private String emissionSticker;
@@ -20,7 +22,7 @@ public class CombustionCar extends Car{
 
     @Override
     public boolean needsInspection() {
-        return getYear() <= 2019; // config
+        return getYear() <= ConfigLoader.getPropertyInt("combustionCar", 2019);
     }
 
     public String getEmissionSticker() {
